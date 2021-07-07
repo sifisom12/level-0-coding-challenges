@@ -1,5 +1,3 @@
-# Task 0.6
-
 def maximum_number(num1, num2, num3):
     if num1 > num2 and num1 >num3:
         return num1
@@ -8,9 +6,13 @@ def maximum_number(num1, num2, num3):
     else:
         return num3
 
-print(maximum_number(221, 761, 2290))
+print(maximum_number(10000, 11761, 2290))
 
 def maximum_number(*nums):
-    return max
+    max_num = nums[0]
+    for num in nums:
+        if num > max_num:
+            max_num = num
+    return max_num
 
-maximum_number(7, 13, 78, 98, 107, 67)
+print(maximum_number(985, 200, 8999, 19877, 111107, 4500))

@@ -1,5 +1,3 @@
-#Task 0.7
-
 def fahrenheit_to_celsius(temperature):
     converted_temp = (temperature - 32) * 5/9
     return converted_temp

@@ -1,10 +1,12 @@
-#Task 0.10
-
 def common_letters(string1, string2):
-    for letter1 in range(len(string1)):
-        for letter2 in range(len(string2)):
-            if string1[letter1] == string2[letter2]:
-                print (letter1, letter2)
+    string1 = string1.lower()
+    string2 = string2.lower()
+    output = " ".join(set(string1).intersection(string2))
+    return output
 
-common_letters("Sifiso", "Sizwe")
+x = common_letters("Miracles", "messages")
+print(f"Common letters: {x}")
+
+
+
 
